@@ -4,6 +4,43 @@
 
 nav{
     box-sizing: border-box;
+    padding: 15px;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: #201E1E;
+    
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+nav div{
+    width: 70%;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav div p{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 95%;
+    height: 90%;
+    background-color: beige;
+}
+
+nav div p:hover{
+    background-color: #B5C2BF ;;
+}
+
+
+/*nav{
+    box-sizing: border-box;
     display: flex ;
     justify-content: space-between;
     position: sticky;
@@ -37,3 +74,4 @@ nav p:hover{
 nav p a:hover{
     color: #201E1E;
 }
+*/
