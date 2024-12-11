@@ -95,6 +95,12 @@ h1{
     align-items: center;
 }
 
+/* Haciendo el hover de las tarjetas Checkpoint
+.tarjetas a :hover{
+    margin: -2%;
+}
+    */
+
 .tarjeta .right-side-tarjeta img{
         height: auto;
         max-width: 100%;
