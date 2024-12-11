@@ -8,6 +8,12 @@ body{
     background-color:#201E1E;
 }
 
+.head{
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
 nav{
     margin: 0;
     display: flex ;
@@ -57,7 +63,7 @@ nav div a:hover{
 .title{
     background-color: ;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     padding: 7%;
     border-bottom: solid; 
     border-color: #c8c8c8;
@@ -69,6 +75,7 @@ h1{
     font-weight: 500;
     color: #B5C2BF;
     letter-spacing: .1rem;
+    margin-top: 5%;
 }
 
 .author{
@@ -95,11 +102,14 @@ h1{
     align-items: center;
 }
 
-/* Haciendo el hover de las tarjetas Checkpoint
-.tarjetas a :hover{
-    margin: -2%;
+.tarjetas a{
+    text-decoration: none;
+    transition: transform 0.3s ;
 }
-    */
+
+.tarjetas a .tarjeta:hover{
+    transform: scale(1.05);
+}
 
 .tarjeta .right-side-tarjeta img{
         height: auto;
@@ -145,11 +155,11 @@ h1{
 }
 
 .primera{
-    background-color: #799FB1;
+    background-color: #8B979D;
 }
 
 .segunda{
-    background-color: #F59662;
+    background-color: #9A9195;
 }
 
 .tercera{
@@ -157,5 +167,5 @@ h1{
 }
 
 .cuarta{
-    background-color: #D34C4C;
+    background-color: #ACB073;
 }
