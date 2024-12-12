@@ -12,6 +12,7 @@ header{
     padding: 20px;
     position: sticky;
     top: 0;
+    background-color: white;
 }
 
 .topnavbar{
@@ -38,13 +39,41 @@ header{
     color: black;
 }
 
+.topnavbar .nav .nav-item .join-button{
+    background-color: black;
+    border: 0;
+    border-radius: 15px;
+    height: 2em;
+}
+
+.topnavbar .nav .nav-item .join-button a{
+    color: white;
+    padding: 15px;
+}
+
+.topnavbar .nav .nav-item .register-button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 2em;
+}
+
+.topnavbar .nav .nav-item .register-button a{
+    color: black;
+    padding: 15px;
+}
+
+
+/*Cookie banner*/
+
 .cookie-banner{
     width: 100vw;
     display: flex;
     padding: 30px;
     box-shadow: 0px -3px rgba(0,0,0,.1);;
-    position: absolute;
+    position: sticky;
     bottom: 0;
+    background-color: white;
 }
 
 .banner-text-container{
@@ -69,4 +98,87 @@ header{
     border-radius: 25px;
     width: 100px;
 }
+
+.invisible{
+    display: none;
+}
+
+
+/*Main content*/
+
+.tarjeta{
+    box-sizing: border-box;
+    max-width: 1400px;
+    max-height: 1076px;
+    margin-bottom: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.image-block{
+    box-sizing: border-box;
+
+}
+
+.tarjeta .image-block img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.text-block{
+    display: flex;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 32px 16px;
+    color: white;
+    font-size: calc(1.0188rem + .2256vw);
+    font-family: -apple-system, -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Roboto,  
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta .block{
+    max-width: 83%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-block .block h2{
+    line-height: 1.385;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.body-text{
+    margin-top: 24px;
+    margin-bottom: 30px;
+    line-height: 1.75;
+}
+
+.body-text p{
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.uno{
+    background-color: #1e3932;
+}
+
+.dos{
+    background-color: #0044b4;
+}
+
+.tres{
+    background-color: #d50032;
+}
+
+
 
