@@ -55,6 +55,12 @@ nav div a:hover{
     color: #201E1E;
 }
 
+.block-tarjeta{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .tarjeta{
     box-sizing: border-box;
     max-width: 1400px;

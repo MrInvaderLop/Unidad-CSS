@@ -18,8 +18,10 @@ header{
 .topnavbar{
     display: flex;
     justify-content: space-between;
-    max-width: 85%;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1240px;
 }
 
 .topnavbar .nav{
@@ -105,6 +107,11 @@ header{
 
 
 /*Main content*/
+.block-tarjeta{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 .tarjeta{
     box-sizing: border-box;
