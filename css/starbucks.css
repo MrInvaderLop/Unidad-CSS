@@ -285,14 +285,13 @@ header{
 }
 
 
-/* Footer */
+/*Prefooter*/
 
 .bottom-part{
     padding-top: 15px;
     padding-bottom: 15px;
     box-shadow: 0 -3px 3px rgba(0, 0, 0, .1);
 }
-/*Prefooter*/
 
 .pre-footer{
     display: flex;
@@ -344,26 +343,44 @@ header{
 }
 
 
+/*Footer */
+
+.last-part{
+    margin: 0;
+    padding: 0;
+}
+
+.last-part .box{
+    border-top: 1px solid #eee;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
 
 /*Social media block*/
-.footer .social-media-block{
-    margin-top: 24px;
-    margin-bottom: 24 ;
-    display: flex;
-    justify-content: center;
+
+.last-part .box .social-media-block{
+    margin-bottom: 30px;
 }
 
-.footer .social-media-block .redes-sociales {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
+.last-part .box .social-media-block ul{
+    text-align: center;
 }
 
-.footer .social-media-block .redes-sociales li{
+.last-part .box .social-media-block .redes-sociales li{
     list-style: none;
+    display: inline-block;
+    margin: 0px 30px 20px 0px;
 }
 
+.last-part .box .social-media-block .redes-sociales li img{
+    transition: transform 0.4s;
+}
 
+.last-part .box .social-media-block .redes-sociales li img:hover{
+    transform: translateY(-0.7em);
+}
+
+/*Menú legal*/
 
 .footer .menu-legal-block{
     margin-top: 30px;
