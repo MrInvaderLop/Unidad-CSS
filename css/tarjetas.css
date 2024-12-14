@@ -123,6 +123,20 @@ nav div a:hover{
     font-weight: 400;
 }
 
+.block .button-tarjeta5 a button{
+    background: none;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 7px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
 .uno{
     background-color: #1e3932;
 }
