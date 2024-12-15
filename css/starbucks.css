@@ -38,7 +38,26 @@ header{
 .topnavbar .nav .nav-item a{
     text-decoration: none;
     font-weight: 800;
-    color: black;
+    color: #000000DE;
+    letter-spacing: 0.1em;
+}
+
+.topnavbar .left-nav .nav-item a:hover{
+    color: #00754a;
+}
+
+.topnavbar .left-nav .nav-item .bottom-bar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px; /* Grosor de la barra */
+    background-color: #00704a;
+}
+
+.topnavbar .left-nav .nav-item .bottom-bar a:hover::after {
+    width: 100%; /* La barra se expande al ancho total del elemento */
 }
 
 .topnavbar .nav .nav-item .join-button{
@@ -100,6 +119,7 @@ header{
     border-radius: 25px;
     border: 0;
     width: 100px;
+    cursor: pointer;
 }
 
 .cookie-banner .banner-text-container .banner-text a{
