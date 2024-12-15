@@ -113,28 +113,16 @@ header{
     color: #4d4d4d
 }
 
-.topnavbar .fa-bars{
+.topnavbar .inside-bar .fixed-bar .fa-bars{
     position: absolute;
     right: 45px;
-    color: #4d4d4d;
-    font-size: 2em;
     height: 0;
+    font-size: 2em;
+    color: #4d4d4d;
     top: 18px;
     padding: 0;
     overflow: hidden;
 }
-
-.header .menu-lateral{
-    position: fixed;
-    top: 0;
-    right: 0; /* Empuja el menú fuera de la pantalla */
-    width: 60%;
-    height: 100%;
-    background-color: white; /* Fondo del menú lateral */
-    transition: all 0.3s ease;
-    z-index: 1000;
-    padding-top: 60px;
-}-----
 
 
 
@@ -148,6 +136,7 @@ header{
     padding: 25px 30px;
     border-top: 1px solid #eee;
     background-color: white;
+    z-index: 1002;
 }
 
 .banner-text-container{
@@ -593,47 +582,39 @@ header{
 
     
     /*Modificando el nav*/
-    .topnavbar .left-nav .nav-item a img{
-        overflow: visible;
-    }
-    
-    .topnavbar .right-nav{
-        height: 0;
-        padding: 0;
-        overflow: hidden;
-        transition: all 0.4s ease;
-    }
 
-    .topnavbar .left-nav .bottom-bar{
-        height: 0;
-        padding: 0;
-        overflow: hidden;
-        transition: all 0.4s ease;
-    }
-
-    .header .active i{
+    .topnavbar .inside-bar .fixed-bar .fa-bars{
         /*Esto es para el icono del menú, está oculto hasta que se llega al tamaño*/
         overflow: visible;
         height: auto;
         padding: 10px 0;
         cursor: pointer;
+        z-index: 1001;
     }
 
+
     /*Configuracion del menu lateral*/
-    /*.header.menu-lateral {
+    .topnavbar .inside-bar .menu-lateral{
         position: fixed;
         top: 0;
-         /* Empuja el menú fuera de la pantalla */
-        width: 250px;
+        right: -2500px; /* Empuja el menú fuera de la pantalla */
+        width: 80%;
         height: 100%;
-        background-color: #333; /* Fondo del menú lateral */
+        background-color: white; /* Fondo del menú lateral */
         transition: all 0.3s ease;
         z-index: 1000;
-        padding-top: 60px; /* Para desplazar los elementos hacia abajo */
-    } */
+        padding: 120px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    main{
+        filter: brightness(40%);
+    }
 
     .header .menu-lateral.active {
-        left: 0; /* Cuando está activo, se despliega */
+        right: 0; /* Cuando está activo, se despliega */
     }
     
     @media (min-width: 768px) {
@@ -641,5 +622,29 @@ header{
           display: none; /* No mostrar menú lateral en pantallas grandes */
         }
     }
+
+    .topnavbar .inside-bar .menu-lateral .nav{
+        display: block;
+    }
+
+    .topnavbar .inside-bar .menu-lateral .left-nav.nav{
+        margin: 0 0 30px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .topnavbar .inside-bar .menu-lateral .nav .nav-item{
+        margin: 0 0 20px;
+    }
+
+    .topnavbar .inside-bar .menu-lateral .right-nav .inline{
+        display: inline-block;
+        margin: 0 10px 0 0;
+    }
+
+    .topnavbar .menu-lateral .left-nav .bottom-bar a:hover{
+        color: #00704a;
+        padding-bottom: 5px;
+    }
+
     
 }
