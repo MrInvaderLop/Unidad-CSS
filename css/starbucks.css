@@ -115,7 +115,7 @@ header{
 
 .topnavbar .inside-bar .fixed-bar .fa-bars{
     position: absolute;
-    right: 45px;
+    right: 25px;
     height: 0;
     font-size: 2em;
     color: #4d4d4d;
@@ -603,15 +603,12 @@ header{
         background-color: white; /* Fondo del menú lateral */
         transition: all 0.3s ease;
         z-index: 1000;
-        padding: 120px 20px;
+        padding: 100px 0px;
         display: flex;
         flex-direction: column;
         justify-content: start;
     }
 
-    .main-active {
-        filter: brightness(40%);
-    }
 
     .header .menu-lateral.active {
         right: 0; /* Cuando está activo, se despliega */
@@ -638,7 +635,7 @@ header{
 
     .topnavbar .inside-bar .menu-lateral .right-nav .inline{
         display: inline-block;
-        margin: 0 10px 0 0;
+        margin: 0 15px 12px 0;
     }
 
     .topnavbar .menu-lateral .left-nav .bottom-bar a:hover{
