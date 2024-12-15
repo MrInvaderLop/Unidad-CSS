@@ -10,7 +10,7 @@ body{
 header{
     box-shadow: 0 3px 3px rgba(0,0,0,.1);
     padding: 20px;
-    position: sticky;
+    position: relative;
     top: 0;
     background-color: white;
 }
@@ -28,7 +28,7 @@ header{
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 .topnavbar .nav .nav-item .item-image{
@@ -42,47 +42,52 @@ header{
     letter-spacing: 0.1em;
 }
 
-.topnavbar .left-nav .nav-item a:hover{
-    color: #00754a;
-}
-
-.topnavbar .left-nav .nav-item .bottom-bar a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 5px; /* Grosor de la barra */
-    background-color: #00704a;
-}
-
-.topnavbar .left-nav .nav-item .bottom-bar a:hover::after {
-    width: 100%; /* La barra se expande al ancho total del elemento */
+.topnavbar .left-nav .bottom-bar a:hover{
+    color: #00704a;
+    border-bottom: 4px solid #00704a;
+    padding-bottom: 30px;
 }
 
 .topnavbar .nav .nav-item .join-button{
     background-color: black;
     border: 0;
     border-radius: 15px;
-    height: 2em;
+    height: 2.3em;
 }
 
 .topnavbar .nav .nav-item .join-button a{
     color: white;
-    padding: 15px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.2em;
 }
 
 .topnavbar .nav .nav-item .register-button{
     background-color: white;
     border: 1px solid black;
     border-radius: 15px;
-    height: 2em;
+    height: 2.3em;
 }
 
 .topnavbar .nav .nav-item .register-button a{
     color: black;
-    padding: 15px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
 }
+
+.topnavbar .right-nav .nav-item .register-button:hover{
+    border: 1px solid #4d4d4d;
+}
+
+.topnavbar .right-nav .nav-item .join-button:hover{
+    background-color: #4d4d4d;
+}
+
+.topnavbar .right-nav .recolor a:hover{
+    color: #4d4d4d
+}
+
 
 
 /*Cookie banner*/
@@ -472,6 +477,7 @@ header{
     text-align: center;
     line-height: 1.5;
 }
+
 
 
 /* Prefooter @media
