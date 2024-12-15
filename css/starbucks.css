@@ -69,12 +69,12 @@ header{
 /*Cookie banner*/
 
 .cookie-banner{
+    position: fixed;
+    bottom: 0;
     width: 100%;
     display: flex;
-    padding: 30px;
+    padding: 25px 30px;
     border-top: 1px solid #eee;
-    position: sticky;
-    bottom: 0;
     background-color: white;
 }
 
@@ -100,6 +100,10 @@ header{
     border-radius: 25px;
     border: 0;
     width: 100px;
+}
+
+.cookie-banner .banner-text-container .banner-text a{
+    color: black;
 }
 
 .invisible{
