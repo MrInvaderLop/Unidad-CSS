@@ -92,6 +92,17 @@ header{
     color: #4d4d4d
 }
 
+.topnavbar .fa-bars{
+    position: absolute;
+    right: 45px;
+    color: #4d4d4d;
+    font-size: 2em;
+    height: 0;
+    top: 18px;
+    padding: 0;
+    overflow: hidden;
+}
+
 
 
 /*Cookie banner*/
@@ -496,6 +507,13 @@ header{
 }
 
 @media screen and (max-width: 768px){
+
+/*Arreglando nav-bar*/
+    header{
+
+    }
+
+/*Arreglando main*/
     .block-tarjeta .tarjeta{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2);
@@ -514,6 +532,7 @@ header{
         grid-template-rows: repeat(2);
     }
 
+/*Arreglando pre-footer*/
     .pre-footer .container .pre-info{
         flex-direction: column;
     }
@@ -542,4 +561,56 @@ header{
         padding: 10px 0;
         cursor: pointer;
     }
+
+    
+    /*Modificando el nav*/
+    .topnavbar .left-nav .nav-item a img{
+        overflow: visible;
+    }
+    
+    .topnavbar .right-nav{
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+
+    .topnavbar .left-nav .bottom-bar{
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+
+    .header .active i{
+        /*Esto es para el icono del menú, está oculto hasta que se llega al tamaño*/
+        overflow: visible;
+        height: auto;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    /*Configuracion del menu lateral*/
+    .header.menu-lateral {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Empuja el menú fuera de la pantalla */
+        width: 250px;
+        height: 100%;
+        background-color: #333; /* Fondo del menú lateral */
+        transition: all 0.3s ease;
+        z-index: 1000;
+        padding-top: 60px; /* Para desplazar los elementos hacia abajo */
+    }
+
+    .menu-lateral.active {
+        left: 0; /* Cuando está activo, se despliega */
+    }
+    
+    @media (min-width: 768px) {
+        .menu-lateral {
+          display: none; /* No mostrar menú lateral en pantallas grandes */
+        }
+    }
+    
 }
