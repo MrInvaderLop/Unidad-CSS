@@ -3,13 +3,17 @@
     margin: 0;
 }
 
+html{
+    width: 100vw;
+}
+
 body{
     font-family: "Roboto", serif;
 }
 
 header{
     box-shadow: 0 3px 3px rgba(0,0,0,.1);
-    padding: 20px;
+    padding: 20px 0px;
     position: relative;
     top: 0;
     background-color: white;
@@ -339,7 +343,11 @@ header{
 .pre-footer .container .pre-info{
     display: flex;
     justify-content: left;
-    min-width: 1200px;
+    min-width: 90vw;
+}
+
+.pre-footer .container .pre-info .pre-footer-block{
+    position: relative;
 }
 
 .pre-footer .container .pre-info .pre-footer-block h3{
@@ -370,6 +378,15 @@ header{
 
 .pre-footer .container .pre-info .first{
     margin: 0px 40px 0px 0px;
+}
+
+.pre-footer .container .pre-info .pre-footer-block i{
+    position: absolute;
+    right: 10px;
+    height: 0;
+    top: 7px;
+    padding: 0;
+    overflow: hidden;
 }
 
 
@@ -478,28 +495,51 @@ header{
     line-height: 1.5;
 }
 
+@media screen and (max-width: 768px){
+    .block-tarjeta .tarjeta{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2);
+    }
 
+    .block-tarjeta .dos .text-block{
+        grid-row: 2 / 3;
+    }
 
-/* Prefooter @media
-.bottom-part{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    box-shadow: 0 -3px 3px rgba(0, 0, 0, .1);
+    .block-tarjeta .cuatro .text-block{
+        grid-row: 2 / 3;
+    }
 
+    .vertical-block .vertical-tarjetas{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2);
+    }
+
+    .pre-footer .container .pre-info{
+        flex-direction: column;
+    }
+
+    .pre-footer .container .pre-info .pre-footer-block ul{
+        /*En este tamaño, la info de este contenedor está oculta*/
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+
+    .pre-footer .container .pre-info .first{
+        margin: 0px;
+    }
+    .pre-footer .container .pre-info .pre-footer-block .active{
+        /*Cuando se agrega class:"active" al ul se muestra la info*/
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .pre-footer .container .pre-info .active i{
+        /*Esto es para la flecha, está oculta hasta que se llega al tamaño*/
+        overflow: visible;
+        height: auto;
+        padding: 10px 0;
+        cursor: pointer;
+    }
 }
-
-.bottom-part .container{
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-.pre-footer .container .pre-footer-block{
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    margin-bottom: 15px;
-}
-
-.pre-footer .container .pre-footer-block h3{
-    font-weight: 400;
-}*/
