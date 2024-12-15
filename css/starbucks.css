@@ -19,6 +19,7 @@ header{
     background-color: white;
 }
 
+
 .topnavbar{
     display: flex;
     justify-content: space-between;
@@ -102,6 +103,18 @@ header{
     padding: 0;
     overflow: hidden;
 }
+
+.header .menu-lateral{
+    position: fixed;
+    top: 0;
+    right: 0; /* Empuja el menú fuera de la pantalla */
+    width: 60%;
+    height: 100%;
+    background-color: white; /* Fondo del menú lateral */
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+}-----
 
 
 
@@ -506,12 +519,8 @@ header{
     line-height: 1.5;
 }
 
+
 @media screen and (max-width: 768px){
-
-/*Arreglando nav-bar*/
-    header{
-
-    }
 
 /*Arreglando main*/
     .block-tarjeta .tarjeta{
@@ -591,19 +600,19 @@ header{
     }
 
     /*Configuracion del menu lateral*/
-    .header.menu-lateral {
+    /*.header.menu-lateral {
         position: fixed;
         top: 0;
-        left: -250px; /* Empuja el menú fuera de la pantalla */
+         /* Empuja el menú fuera de la pantalla */
         width: 250px;
         height: 100%;
         background-color: #333; /* Fondo del menú lateral */
         transition: all 0.3s ease;
         z-index: 1000;
         padding-top: 60px; /* Para desplazar los elementos hacia abajo */
-    }
+    } */
 
-    .menu-lateral.active {
+    .header .menu-lateral.active {
         left: 0; /* Cuando está activo, se despliega */
     }
     
