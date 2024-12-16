@@ -114,7 +114,7 @@ header{
 }
 
 .topnavbar .inside-bar .fixed-bar .fa-bars{
-    position: absolute;
+    position: fixed;
     right: 25px;
     height: 0;
     font-size: 2em;
@@ -133,10 +133,11 @@ header{
     bottom: 0;
     width: 100%;
     display: flex;
-    padding: 25px 30px;
+    padding: 10px 30px;
     border-top: 1px solid #eee;
     background-color: white;
     z-index: 1002;
+    font-size: 0.8em;
 }
 
 .banner-text-container{
@@ -151,6 +152,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 10px;
 }
 
 .cookie-banner .banner-button-container .banner-button{
@@ -457,6 +459,7 @@ header{
 
 .last-part .box .social-media-block ul{
     text-align: center;
+    padding: 0;
 }
 
 .last-part .box .social-media-block .redes-sociales li{
@@ -531,6 +534,7 @@ header{
 
 @media screen and (max-width: 768px){
 
+
 /*Arreglando main*/
     .block-tarjeta .tarjeta{
         grid-template-columns: 1fr;
@@ -582,6 +586,15 @@ header{
 
     
     /*Modificando el nav*/
+
+    header{
+        position: sticky;
+        z-index: 1002;
+    }
+
+    main{
+        width: 100vw;
+    }
 
     .topnavbar .inside-bar .fixed-bar .fa-bars{
         /*Esto es para el icono del menú, está oculto hasta que se llega al tamaño*/
@@ -643,5 +656,31 @@ header{
         padding-bottom: 5px;
     }
 
-    
 }
+
+@media screen and (max-width: 480px){
+
+    /*Tocando footer*/
+    .last-part .box .social-media-block ul{
+        text-align: start;
+        padding: 0;
+    }
+
+    .last-part .box .menu-legal-block .legalidades li{
+        display: block;
+        text-align: start;
+        margin-bottom: 25px;
+        margin-left: 0;
+    }
+
+    .last-part .box .menu-legal-block .legalidades li a{
+        color: black;
+        font-weight: 300;
+    }
+
+    .last-part .box .menu-legal-block .legalidades li a::after{
+        content: "";
+    }
+
+}
+
