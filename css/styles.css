@@ -20,7 +20,7 @@ nav{
     display: flex ;
     justify-content: space-between;
     align-items: stretch;
-    width: 100vw;
+    width: 100%;
     background-color: #201E1E;
     box-shadow: 0px 2px 5px #c8c8c8;
     
@@ -191,6 +191,9 @@ h1{
 }
 
 @media screen and (max-width: 490px){
+    nav{
+        padding: 0 10px;
+    }
     h1{
         font-size: calc(5vw + 8.5vh);
 }
@@ -205,9 +208,9 @@ h1{
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 375px){
     nav{
-        width: 100%;
+        font-size: 90%;
     }
     nav div{
         width: 100vw;
